@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter N (N > 0) <input type="text" id="number">
+<input type="button" id="sum" value="Sum 1->N" onclick="Sum();">
+<script>
+    function Sum() {
+        let Sum = 0;
+        let n = document.getElementById('number').value;
+        for (let i = 1; i <= n; i++) {
+            Sum = Sum + i;
+        }
+        document.write("Result = "  + Sum);
+    }
+</script>
+</body>
+</html>
